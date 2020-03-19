@@ -9,7 +9,7 @@ Modify the pom file to change the input and output directories as required.
 Use BloomRPC client
 
 The code is for Unary Call using RPC. It creates an order.
-
+```
 message OrderRequest {
     string orderNo = 1;
     string orderDate = 2;
@@ -22,3 +22,4 @@ message OrderResponse {
 service OrderService {
     rpc order(OrderRequest) returns (OrderResponse);
 }
+```
