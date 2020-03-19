@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.meric.order.model;
+
+message OrderRequest {
+    string orderNo = 1;
+    string orderDate = 2;
+}
+
+message OrderResponse {
+    string orderDetails = 1;
+}
+
+service CreateOrderService {
+    rpc order(OrderRequest) returns (OrderResponse);
+}
